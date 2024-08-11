@@ -1,0 +1,192 @@
+body
+{
+   background-color: #fff;
+   color: #222;
+   font-size: 0.9em;
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   text-align: left;
+   padding: 2%;
+}
+
+#page
+{
+   margin: 0%;
+   padding: 0%;
+}
+
+a
+{
+   font-style: normal;
+   text-decoration: none;
+   color: #22a;
+}
+
+a:hover
+{
+   font-weight: bold;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.image {
+	flex-basis: 12%;
+	padding-bottom: 20px;
+}
+
+.text {
+	flex-basis: 100%;
+	padding-left: 20px;
+}
+
+.img-circle {
+  border-radius: 50%;
+  max-width: 100%
+}
+
+header
+{
+   margin-bottom: 20px;
+   margin-top: 0px;
+   background-color: #fff;
+   border-bottom: 3px ridge #222;
+   padding: 0.05%;
+}
+
+header h1
+{
+   color: #222;
+   font-size: 2.2em;
+   display: inline-block;
+   width: 70%;
+   font-weight: normal;
+   font-style: normal;
+   margin-bottom: 1px;
+}
+
+header h2
+{    
+   color: #555;
+   font-size: 1.2em;
+   display: inline-block;
+   width: 100%;
+   font-weight: normal;
+   font-style: normal;
+   margin-top: 0px;
+   margin-bottom: 1px;
+}
+
+header h3
+{    
+   color: #555;
+   font-size: 1em;
+   display: inline-block;
+   width: 100%;
+   font-weight: normal;
+   font-style: italic;
+   margin-top: 1px;
+} 
+
+article
+{
+   background-color: #fff;
+   margin-bottom: 10px;
+   border-bottom: 1px ridge #222;
+   text-align: justify;
+   padding: 0.05%;
+}
+
+article h2
+{
+   font-size: 1.4em;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-decoration: underline;
+}
+
+article h3
+{
+   font-size: 1.2em;
+   font-weight: bold;
+   text-decoration: none;
+   margin-top: 1.5em;
+}
+
+.emph
+{
+   font-style: italic;
+}
+
+.paper-title
+{
+   font-weight: bold;
+}
+
+article ul
+{
+   list-style-position : inside;
+   list-style-type: disc;
+   padding-left: 3px;
+   text-align: justify;
+}
+
+article li
+{
+   margin-left: 10px;
+   margin-bottom: 6px;
+}
+
+nav
+{
+   display: inline-block;
+   text-align: right;
+   width: 100%;
+   text-transform: uppercase;
+}
+
+.navigation, .selection
+ {
+   font-size: 1.3em;
+   font-style: normal;
+   color: #222;
+   text-decoration: none;
+   padding-bottom: 3px;
+   font-family: "Lucida Console", Monaco, monospace;
+ }
+
+.selection
+{
+   color:#454545;
+   text-decoration: underline;
+}
+
+.language
+{
+   display: inline-block;
+   text-align: right;
+   width: 28%;
+}
+
+.language ul
+{
+   list-style-type: none;
+   padding-left: 0;
+}
+
+.language li
+{
+   display: inline-block;
+}
+
+.language img
+{
+   width: 30px;
+   height: 20px;
+   border: 1px ridge #222;
+   border-radius: 2px;
+   margin-right: 0%;
+   margin-left: 0%;
+}
