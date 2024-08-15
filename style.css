@@ -2,7 +2,7 @@ body
 {
    background-color: #fff;
    color: #222;
-   font-size: 0.9em;
+   font-size: 1.1em;
    font-family: "Trebuchet MS", Helvetica, sans-serif;
    text-align: left;
    padding: 2%;
@@ -14,11 +14,21 @@ body
    padding: 0%;
 }
 
+@media only screen and (min-width: 1000px)
+{
+  /* For large screens: */
+  #page
+  {
+     padding-left: 10%;
+     padding-right: 10%;
+  }
+}
+
 a
 {
    font-style: normal;
    text-decoration: none;
-   color: #22a;
+   color: #922;
 }
 
 a:hover
@@ -33,7 +43,7 @@ a:hover
 }
 
 .image {
-	flex-basis: 12%;
+	flex-basis: 25%;
 	padding-bottom: 20px;
 }
 
@@ -43,8 +53,8 @@ a:hover
 }
 
 .img-circle {
-  border-radius: 50%;
-  max-width: 100%
+  border-radius: 35%;
+  max-width: 95%
 }
 
 header
@@ -59,36 +69,43 @@ header
 header h1
 {
    color: #222;
-   font-size: 2.2em;
+   font-size: 2.5em;
    display: inline-block;
-   width: 70%;
+   width: 100%;
    font-weight: normal;
    font-style: normal;
-   margin-bottom: 1px;
+   margin-bottom: 5px;
+}
+
+.jp
+{
+  font-size: .75em;
+  color: #252525;
+  white-space: nowrap;
 }
 
 header h2
-{    
-   color: #555;
-   font-size: 1.2em;
+{
+   color: #444;
+   font-size: 1.25em;
    display: inline-block;
    width: 100%;
    font-weight: normal;
    font-style: normal;
    margin-top: 0px;
-   margin-bottom: 1px;
+   margin-bottom: 5px;
 }
 
 header h3
-{    
+{
    color: #555;
    font-size: 1em;
    display: inline-block;
    width: 100%;
    font-weight: normal;
-   font-style: italic;
-   margin-top: 1px;
-} 
+   font-style: normal;
+   margin-top: 0px;
+}
 
 article
 {
@@ -101,7 +118,7 @@ article
 
 article h2
 {
-   font-size: 1.4em;
+   font-size: 1.25em;
    font-weight: bold;
    text-transform: uppercase;
    text-decoration: underline;
@@ -109,7 +126,7 @@ article h2
 
 article h3
 {
-   font-size: 1.2em;
+   font-size: 1.125em;
    font-weight: bold;
    text-decoration: none;
    margin-top: 1.5em;
@@ -118,11 +135,6 @@ article h3
 .emph
 {
    font-style: italic;
-}
-
-.paper-title
-{
-   font-weight: bold;
 }
 
 article ul
@@ -145,16 +157,29 @@ nav
    text-align: right;
    width: 100%;
    text-transform: uppercase;
+   margin-top: 10px;
 }
 
 .navigation, .selection
  {
-   font-size: 1.3em;
+   font-size: 1.25em;
    font-style: normal;
    color: #222;
    text-decoration: none;
    padding-bottom: 3px;
+   padding-left: 2.5em;
    font-family: "Lucida Console", Monaco, monospace;
+   white-space: nowrap;
+ }
+
+ @media only screen and (max-width: 600px)
+ {
+   /* For small screens: */
+   .navigation, .selection
+   {
+      display: block;
+      padding-bottom: 0px;
+   }
  }
 
 .selection
