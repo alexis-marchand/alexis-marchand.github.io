@@ -39,16 +39,16 @@ a:hover
 .container {
 	display: flex;
 	align-items: center;
-	justify-content: center
+	justify-content: center;
 }
 
 .image {
-	flex-basis: 25%;
+	flex-basis: 400px;
 	padding-bottom: 20px;
 }
 
 .text {
-	flex-basis: 100%;
+	flex-basis: fit-content;
 	padding-left: 20px;
 }
 
@@ -74,7 +74,7 @@ header h1
    width: 100%;
    font-weight: normal;
    font-style: normal;
-   margin-bottom: 5px;
+   margin-bottom: 8px;
 }
 
 .jp
@@ -93,7 +93,7 @@ header h2
    font-weight: normal;
    font-style: normal;
    margin-top: 0px;
-   margin-bottom: 5px;
+   margin-bottom: 8px;
 }
 
 header h3
@@ -180,6 +180,49 @@ nav
       display: block;
       padding-bottom: 0px;
    }
+
+  .container{
+    display: block;
+  }
+
+  .image {
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 250px;
+	  padding-bottom: 0px;
+  }
+  
+  .text {
+	  padding-left: 0px;
+	  padding-right: 0px;
+  }
+
+  header h1
+  {
+     display: block;
+     text-align: center;
+     margin: auto;
+     margin-bottom: 8px;
+  }
+
+  header h2
+  {
+     display: block;
+     text-align: center;
+     margin: auto;
+     margin-top: 0px;
+     margin-bottom: 8px;
+  }
+
+  header h3
+  {
+     display: block;
+     text-align: center;
+     margin: auto;
+     margin-bottom: 15px;
+     margin-top: 10px;
+  }
  }
 
 .selection
