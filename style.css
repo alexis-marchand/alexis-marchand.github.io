@@ -118,6 +118,7 @@ article
 
 article h2
 {
+   text-align: left;
    font-size: 1.25em;
    font-weight: bold;
    text-transform: uppercase;
@@ -125,6 +126,7 @@ article h2
 
 article h3
 {
+   text-align: left;
    font-size: 1.125em;
    font-weight: bold;
    text-decoration: none;
