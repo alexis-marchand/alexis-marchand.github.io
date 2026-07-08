@@ -133,6 +133,12 @@ article h3
    margin-top: 1.5em;
 }
 
+.backtotop
+{
+   font-style: italic;
+   font-size: .75em;
+}
+
 .emph
 {
    font-style: italic;
