@@ -19,8 +19,8 @@ body
   /* For large screens: */
   #page
   {
-     padding-left: 10%;
-     padding-right: 10%;
+     padding-left: 20%;
+     padding-right: 20%;
   }
 }
 
@@ -45,6 +45,23 @@ a:hover
 .image {
 	flex-basis: 400px;
 	padding-bottom: 20px;
+}
+
+.statement {
+   	background-color: #777;
+   	color: #fff;
+	margin-top: 2em;
+	margin-bottom: 2em;
+   	text-align: justify;
+   	padding: 4%;
+	border-radius: 20px;
+}
+
+.statement h3
+{
+   	margin-top: 0em;
+   	margin-bottom: 0em;
+	text-decoration-line: underline;
 }
 
 .text {
