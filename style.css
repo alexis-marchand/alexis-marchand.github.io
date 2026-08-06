@@ -47,6 +47,42 @@ a:hover
 	padding-bottom: 20px;
 }
 
+ul {
+	margin-left: 1.5em;
+}
+
+ul li {
+	list-style-position: outside;
+	margin-bottom: .5em;
+}
+
+ol.publist1 {
+	counter-reset: mycounter;
+}
+
+ol.publist1, ol.publist2, ol.publist3, ol.publist4 {
+	margin-left: 0;
+	padding-left: .5em;
+	list-style: none outside none;
+  	display: block;
+}
+
+ol.publist1 li, ol.publist2 li, ol.publist3 li, ol.publist4 li {
+ 	position: relative;
+ 	list-style: none;
+	padding-left: 2em;
+	margin-bottom: .5em;
+}
+
+ol.publist1 li:before, ol.publist2 li:before, ol.publist3 li:before, ol.publist4 li:before { 
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	content: "[" counter(mycounter) "] "; 
+	counter-increment: mycounter;
+	width: 1em;
+}
+
 .statement {
    	background-color: #777;
    	color: #fff;
