@@ -7,10 +7,63 @@
             pdfauthor={Alexis Marchand},
             pdftitle={Mathematicians, machines, and the Earth},
             colorlinks=true]{hyperref}
-\usepackage{amsrefs}
+\usepackage{filecontents}
 
 \title{Mathematicians, machines, and the Earth}
 \author{Alexis Marchand}
+
+\begin{filecontents}{refs.bib}
+	@misc{chu,
+		author={Chu, Tasmin},
+		title={The AI dissenter viewpoint},
+		year={2026},
+		url={https://proofsandprompts.com/2026/08/09/the-ai-dissenter-viewpoint/},
+	}
+	
+	@misc{weinreich,
+		author={Weinreich, Max},
+		title={The crisis of AI-generated mathematics},
+		year={2026},
+		url={https://arxiv.org/abs/2608.02859},
+	}
+	
+	
+	@misc{unu,
+		author={M. Aczel and S. Chamanara and M. Matin and A. Farsi and T. Marwala and K. Madani},
+		title={Environmental Cost of AI's Energy Use: Carbon, Water and Land Footprints},
+		year={2026},
+		note={UNU-INWEH Report, United Nations University Institute for Water, Environment and Health (UNU-INWEH), Richmond Hill, Ontario},
+		url={https://doi.org/10.53328/INR26RMA002}
+	 }
+	
+	@article{ding-etal,
+		title = {Tracking the carbon footprint of global generative artificial intelligence},
+		journal = {The Innovation},
+		volume = {6},
+		number = {5},
+		pages = {100866},
+		year = {2025},
+		issn = {2666-6758},
+		author = {Zhaohao Ding and Jianxiao Wang and Yiyang Song and Xiaokang Zheng and Guannan He and Xiupeng Chen and Tiance Zhang and Wei-Jen Lee and Jie Song},
+		url = {https://doi.org/10.1016/j.xinn.2025.100866}
+	}
+
+	@inbook{lambert-luccioni,
+		author = {Lambert, Katherine and Luccioni, Sasha},
+		title = {From Cradle to Cloud: A Life Cycle Review of AI's Environmental Footprint},
+		year = {2026},
+		isbn = {9798400725968},
+		publisher = {Association for Computing Machinery},
+		address = {New York, NY, USA},
+		booktitle = {Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency},
+		pages = {518–540},
+		numpages = {23},
+		url = {https://doi.org/10.1145/3805689.3812401},
+	}
+\end{filecontents}
+
+\usepackage[backend=bibtex,style=nature,sorting=nyt]{biblatex}
+\addbibresource{refs.bib}
 
 \begin{document}
 	\maketitle
@@ -22,7 +75,7 @@
 	I believe that those two crises are profoundly intertwined; they feed each other and have the same deep roots, and they should be thought together.
 	Those roots are a Promethean belief in the might of human technology and a thirst for everlasting growth.
 	These led to the Industrial Revolution in the nineteenth century, with increases in productivity that improved our life conditions, but are now confronted with the resource limitations of our planet, and have modified our climate in a destructive manner.
-	Today, the development of large language models is coming with similar promises of infinite growth and unlimited power, while relying on resource-intensive data centres, as well as profit-driven, wealth-accumulating leadership.
+	Today, the development of large language models is coming with similar promises of infinite growth and unlimited power, while relying on resource-intensive data centres\footnote{As an example, according to a UNU report \cite{unu}, LLM workloads were responsible for about 20\% of the global electricity consumption of data centres in 2025, or about 90 TWh, and by 2030, the annual electricity consumption of large language models could reach about 380 TWh, which is comparable with the total electricity consumption of France (470 TWh) or Saudi Arabia (420 TWh) in 2025. See also another study by Ding et al. \cite{ding-etal} and a literature review by Lambert and Luccioni \cite{lambert-luccioni}.}, as well as profit-driven, wealth-accumulating leadership.
 	This is aggravating the current climate crisis and is relying on the same way of thinking that has shown its limitations.
 	It is also worth noting that the Industrial Revolution facilitated the development of the mass destruction weapons that were the instruments of two traumatic world wars; in a time of geopolitical tensions --- that are not unrelated to the resource limitations of the Earth --- we should carefully think about what the new large language model revolution might lead to.
 	
@@ -85,18 +138,7 @@
 	I will keep to this stance as long as large language models are based on the Earth- and human-damaging philosophy which is currently at their core.
 	
 	I understand that this position might sound radical, and I do not expect all mathematicians to follow it, but my hope in writing this text is to encourage everyone to think about the impact of our choices, not just on mathematics, but on the Earth and its inhabitants.
-        
-\begin{thebibliography}{1}
-    \bib{chu}{misc}{
-        author={Chu, Tasmin},
-        title={The AI dissenter viewpoint},
-        note = {Available at \href{https://proofsandprompts.com/2026/08/09/the-ai-dissenter-viewpoint/}{proofsandprompts.com/2026/08/09/the-ai-dissenter-viewpoint/}},
-    }
-    \bib{weinreich}{misc}{
-        author={Weinreich, Max},
-        title={The crisis of AI-generated mathematics},
-        note = {Available at \href{https://arxiv.org/abs/2608.02859}{arxiv.org/abs/2608.02859}},
-    }
-\end{thebibliography}
+	
+	\printbibliography
 
 \end{document}
