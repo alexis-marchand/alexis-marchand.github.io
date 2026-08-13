@@ -1,3 +1,20 @@
+a
+{
+   font-style: normal;
+   text-decoration: none;
+   color: #922;
+}
+
+a:hover
+{
+   text-decoration: underline;
+}
+
+.statement a
+{
+   color: #f99;
+}
+
 body
 {
    background-color: #fff;
@@ -22,18 +39,6 @@ body
      padding-left: 20%;
      padding-right: 20%;
   }
-}
-
-a
-{
-   font-style: normal;
-   text-decoration: none;
-   color: #922;
-}
-
-a:hover
-{
-   text-decoration: underline;
 }
 
 .container {
