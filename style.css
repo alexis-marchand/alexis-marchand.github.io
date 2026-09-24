@@ -10,6 +10,12 @@ a:hover
    text-decoration: underline;
 }
 
+.smalltitle
+{
+   font-weight: 700;
+   font-variant-caps: all-small-caps;
+}
+
 .statement a
 {
    color: #f99;
